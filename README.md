@@ -2,7 +2,7 @@
 event-driven-platform-with-saga
 
 1. Problem statement & solution approach - https://vijayredkar.medium.com/
-2. Architecture diagram - !![BankNext_Choreog_SAGA_Arch](https://user-images.githubusercontent.com/25388646/126084923-b5063f9d-289a-4f7f-998b-f24c5413b1f5.png)
+2. Architecture diagram - [BankNext_Choreog_SAGA_Arch](https://user-images.githubusercontent.com/25388646/126084923-b5063f9d-289a-4f7f-998b-f24c5413b1f5.png)
 
 
 3. Local Kafka setup
