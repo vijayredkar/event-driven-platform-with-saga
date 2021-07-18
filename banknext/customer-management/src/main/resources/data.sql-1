@@ -1,0 +1,39 @@
+DROP TABLE IF EXISTS customer;
+
+CREATE TABLE customer (
+  id 				  INT AUTO_INCREMENT  PRIMARY KEY,  
+  customernum  		  INT NOT NULL,
+  firstname 		  VARCHAR(250) NOT NULL,
+  lastname 			  VARCHAR(250) NOT NULL,
+  email 			  VARCHAR(250) NOT NULL,
+  occupation 		  VARCHAR(250),
+  citizenship 		  VARCHAR(250),  
+  createddate 		  TIMESTAMP,
+  enabled   		  BOOLEAN DEFAULT true
+);
+
+INSERT INTO customer (customernum, firstName, lastname, email, occupation, citizenship, createddate, enabled ) VALUES
+  (60001, 'Tom', 'James', 'tom.james@gmail.com', 'CA', 'USA', CURRENT_TIMESTAMP, true),
+  (60001, 'Harry', 'Joe', 'harry.joe@yahoo.com', 'PM', 'AUS', CURRENT_TIMESTAMP, true);
+
+
+
+
+
+DROP TABLE IF EXISTS customer;
+
+CREATE TABLE customer (
+  customernum		  INT AUTO_INCREMENT  PRIMARY KEY,
+  firstname 		  VARCHAR(250) NOT NULL,
+  lastname 			  VARCHAR(250) NOT NULL,
+  email 			  VARCHAR(250) NOT NULL,
+  occupation 		  VARCHAR(250),
+  citizenship 		  VARCHAR(250),  
+  createddate 		  TIMESTAMP,
+  modifieddate 		  TIMESTAMP,  
+  enabled   		  BOOLEAN DEFAULT true
+);
+
+INSERT INTO customer (customernum, firstName, lastname, email, occupation, citizenship, createddate, modifieddate, enabled ) VALUES
+  (600001, 'Tom', 'James', 'tom.james@gmail.com', 'CA', 'USA', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, true),
+  (600002, 'Harry', 'Joe', 'harry.joe@yahoo.com', 'PM', 'AUS', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, true);

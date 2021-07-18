@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS customer_account_map;
+
+CREATE TABLE customer_account_map (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  customerid INT NOT NULL,
+  accountid  INT NOT NULL,
+  CREATEDDATE TIMESTAMP,
+  enabled   BOOLEAN DEFAULT NULL
+);
+
+INSERT INTO customer_account_map (customerid, accountid, createddate, enabled ) VALUES
+  (1, 1, CURRENT_TIMESTAMP, true),
+  (2, 2, CURRENT_TIMESTAMP, true);

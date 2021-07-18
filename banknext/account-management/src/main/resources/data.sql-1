@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS account;
+
+CREATE TABLE account (
+  id INT AUTO_INCREMENT  PRIMARY KEY,  
+  accountnum  		  INT NOT NULL,
+  type 				  VARCHAR(250) NOT NULL,
+  dailywithdrwallimit DOUBLE DEFAULT 50000,
+  minbalance 		  DOUBLE DEFAULT 0,
+  hni   			  BOOLEAN DEFAULT false,
+  overdraft   		  BOOLEAN DEFAULT false,  
+  createddate 		  TIMESTAMP,
+  enabled   		  BOOLEAN DEFAULT true
+);
+
+INSERT INTO account (accountnum, type, dailywithdrwallimit, minbalance, hni, overdraft, createddate, enabled ) VALUES
+  (10001, 'SAVINGS', 50000, 0, true, true, CURRENT_TIMESTAMP, true),
+  (10002, 'CURRENT', 50000, 0, true, true, CURRENT_TIMESTAMP, true);
