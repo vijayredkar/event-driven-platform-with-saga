@@ -32,7 +32,7 @@
      - cd <project_dir>\event-driven-platform-with-saga\banknext\supporting\notification-svc >  mvn spring-boot:run
    - recommendation-mgt launch 
      - cd <project_dir>\event-driven-platform-with-saga\banknext\supporting\recommendation-svc >  mvn spring-boot:run
-   4. Sample test cURLs for simulation
+5. Sample test cURLs for simulation
      - <project_dir>\event-driven-platform-with-saga\banknext/test-docs/1-cURL-event-initiator-flow-NoRollback-Reqd.txt
      - <project_dir>\event-driven-platform-with-saga\banknext/test-docs/2-cURL-event-initiator-SAGA-AcctFail-CustRollback-Reqd.txt
      - <project_dir>\event-driven-platform-with-saga\banknext/test-docs/3-cURL-event-initiator-SAGA-AggrFail-CustAcctRollback-Reqd.txt
