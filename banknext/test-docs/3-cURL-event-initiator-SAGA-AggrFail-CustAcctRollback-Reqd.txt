@@ -1,0 +1,18 @@
+{
+    "customer":
+        {	
+        "email" : "tom@test.com",
+        "firstName" : "Kay",
+        "lastName" : "Dos",
+        "occupation" : "Accountant",
+        "citizenship" : "USA"
+        },
+    "account":
+        {	
+        "type" : "CURRENT",
+        "hni" : true,
+        "minBalance" : 2000,
+        "overdraft" : false,
+        "dailyWithdrwalLimit" : 10000				 	
+        }
+}

@@ -1,0 +1,21 @@
+curl --request POST \
+  --url http://localhost:8060/event-initiator/new \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "customer":
+        {	
+        "email" : "tom@test.com",
+        "firstName" : "Kay",
+        "lastName" : "Dos",
+        "occupation" : "Accountant",
+        "citizenship" : "USA"
+        },
+    "account":
+        {	
+        "type" : "SAVINGS",
+        "hni" : true,
+        "minBalance" : 2000,
+        "overdraft" : false,
+        "dailyWithdrwalLimit" : 10000				 	
+        }
+}'
