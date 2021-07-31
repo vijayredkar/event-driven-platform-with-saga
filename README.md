@@ -1,5 +1,3 @@
-#event-driven-platform-with-saga
-
 1. Problem statement & solution approach - https://vijayredkar.medium.com/event-driven-saga-compensation-95af562d39c5
 2. Architecture diagram - !!![BankNext_Choreog_SAGA_Arch](https://user-images.githubusercontent.com/25388646/127653144-b97fa414-1bc2-4a58-b4c7-7fca7d6530b6.png)
 
